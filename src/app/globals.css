@@ -1,7 +1,10 @@
 :root {
-  --background-primary: #ebeff7;
-  --background-secondary: #ffffff;
+  --background: #ffffff;
   --foreground: #000000;
+  --color-primary: #56cfe1;
+  --color-primary-hover: #3abbd3;
+  --color-primary-active: #2aaac1;
+  --border: rgba(0, 0, 0, 0.2);
   --font-inter: "Inter";
 }
 

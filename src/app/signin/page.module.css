@@ -1,0 +1,121 @@
+.signin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.signinContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 460px;
+  margin: 120px auto 0 auto;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 30px 46px 50px 46px;
+}
+
+.signinContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signinForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 16px;
+}
+
+.signinHeader h1 {
+  margin: 0 0 16px 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.signinFields {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.signinActions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.signinButton {
+  padding: 12px 28.8px;
+  border: 0.225rem solid var(--foreground);
+  border-radius: 2rem;
+  min-width: 100%;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  transition: 0.2s cubic-bezier(0, 0.5, 0.5, 1);
+  text-decoration: none;
+  color: var(--foreground);
+  font-weight: 600;
+  background-color: var(--background);
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.signinButton:hover {
+  transform: scale(1.05);
+}
+
+.divider {
+  border-top: 1px solid var(--border);
+  position: relative;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  height: 1px;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.dividerText {
+  background-color: var(--background);
+  padding: 0 0.5em;
+  position: relative;
+  color: var(--foreground);
+  top: -0.75em;
+}
+
+.signupActions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.signupButton {
+  padding: 12px 28.8px;
+  border: 0.225rem solid var(--foreground);
+  border-radius: 2rem;
+  min-width: 100%;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  transition: 0.2s cubic-bezier(0, 0.5, 0.5, 1);
+  text-decoration: none;
+  color: var(--foreground);
+  font-weight: 600;
+  background-color: var(--background);
+  cursor: pointer;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.signupButton:hover {
+  transform: scale(1.05);
+  background-color: var(--color-primary);
+  color: var(--foreground);
+}
