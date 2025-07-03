@@ -78,8 +78,6 @@
 
 .signupButton:hover {
   transform: scale(1.05);
-  background-color: var(--color-primary);
-  color: var(--foreground);
 }
 
 .divider {

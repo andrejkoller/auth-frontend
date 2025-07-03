@@ -56,6 +56,16 @@ export default function Page() {
                   required
                 />
               </div>
+              <div className={styles.signupField}>
+                <TextField
+                  label="Confirm Password"
+                  type="password"
+                  variant="outlined"
+                  fullWidth
+                  margin="normal"
+                  required
+                />
+              </div>
             </div>
             <div className={styles.signupActions}>
               <button type="submit" className={styles.signupButton}>
