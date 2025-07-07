@@ -15,6 +15,32 @@ export default function Page() {
             <div className={styles.signinFields}>
               <div className={styles.signinField}>
                 <TextField
+                  sx={{
+                    "& .MuiOutlinedInput-root": {
+                      "& fieldset": {
+                        borderColor: "var(--border)",
+                      },
+                      "&:hover fieldset": {
+                        borderColor: "var(--border)",
+                      },
+                      "&.Mui-focused fieldset": {
+                        borderColor: "var(--border)",
+                      },
+                      "& .MuiInputBase-input": {
+                        color: "var(--text-default)",
+                      },
+                      "& .MuiInputBase-input::placeholder": {
+                        color: "var(--text-muted)",
+                        opacity: 1,
+                      },
+                    },
+                    "& .MuiFormLabel-root": {
+                      color: "var(--text-default)",
+                    },
+                    "& .MuiFormLabel-root.Mui-focused": {
+                      color: "var(--text-default)",
+                    },
+                  }}
                   label="Email"
                   variant="outlined"
                   placeholder="name@domain.com"
@@ -25,6 +51,32 @@ export default function Page() {
               </div>
               <div className={styles.signinField}>
                 <TextField
+                  sx={{
+                    "& .MuiOutlinedInput-root": {
+                      "& fieldset": {
+                        borderColor: "var(--border)",
+                      },
+                      "&:hover fieldset": {
+                        borderColor: "var(--border)",
+                      },
+                      "&.Mui-focused fieldset": {
+                        borderColor: "var(--border)",
+                      },
+                      "& .MuiInputBase-input": {
+                        color: "var(--text-default)",
+                      },
+                      "& .MuiInputBase-input::placeholder": {
+                        color: "var(--text-muted)",
+                        opacity: 1,
+                      },
+                    },
+                    "& .MuiFormLabel-root": {
+                      color: "var(--text-default)",
+                    },
+                    "& .MuiFormLabel-root.Mui-focused": {
+                      color: "var(--text-default)",
+                    },
+                  }}
                   label="Password"
                   type="password"
                   variant="outlined"
