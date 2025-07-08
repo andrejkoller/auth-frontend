@@ -31,8 +31,16 @@
   gap: 16px;
 }
 
+.signupHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
 .signupHeader h1 {
-  margin: 0 0 16px 0;
+  margin: 0;
   text-align: center;
   font-size: 24px;
   font-weight: 600;

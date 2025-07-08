@@ -86,6 +86,11 @@ export default function Page() {
                 />
               </div>
             </div>
+            <div className={styles.signinOptions}>
+              <Link href={"/forgot-password"} className={styles.forgotPassword}>
+                Forgot password?
+              </Link>
+            </div>
             <div className={styles.signinActions}>
               <button type="submit" className={styles.signinButton}>
                 Log In
@@ -97,7 +102,7 @@ export default function Page() {
           </div>
           <div className={styles.signupActions}>
             <Link href={"/signup"} className={styles.signupButton}>
-              <span>Create Account</span>
+              <span>Sign Up</span>
             </Link>
           </div>
         </div>
