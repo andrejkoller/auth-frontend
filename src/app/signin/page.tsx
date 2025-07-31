@@ -2,8 +2,12 @@
 import { TextField } from "@mui/material";
 import styles from "./page.module.css";
 import Link from "next/link";
+import { AnimatedButton } from "@/components/AnimatedButton/AnimatedButton";
+import { useRouter } from "next/navigation";
 
 export default function Page() {
+  const router = useRouter();
+
   return (
     <section className={styles.signinSection}>
       <div className={styles.signinContainer}>
@@ -101,9 +105,14 @@ export default function Page() {
             <span className={styles.dividerText}>or</span>
           </div>
           <div className={styles.signupActions}>
-            <Link href={"/signup"} className={styles.signupButton}>
+            <AnimatedButton
+              type={"button"}
+              className={styles.signupButton}
+              hoverType={"background"}
+              onClick={() => router.push("/signup")}
+            >
               <span>Sign Up</span>
-            </Link>
+            </AnimatedButton>
           </div>
         </div>
       </div>

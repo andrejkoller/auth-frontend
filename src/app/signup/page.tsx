@@ -2,6 +2,7 @@
 import { TextField } from "@mui/material";
 import styles from "./page.module.css";
 import Link from "next/link";
+import { AnimatedButton } from "@/components/AnimatedButton/AnimatedButton";
 
 export default function Page() {
   return (
@@ -198,9 +199,13 @@ export default function Page() {
               </div>
             </div>
             <div className={styles.signupActions}>
-              <button type="submit" className={styles.signupButton}>
+              <AnimatedButton
+                type={"submit"}
+                className={styles.signupButton}
+                hoverType={"background"}
+              >
                 Create Account
-              </button>
+              </AnimatedButton>
             </div>
           </form>
           <div className={styles.divider}>
