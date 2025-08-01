@@ -51,6 +51,7 @@ export default function Page() {
                   fullWidth
                   margin="normal"
                   required
+                  autoFocus
                 />
               </div>
               <div className={styles.signinField}>
