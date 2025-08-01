@@ -132,9 +132,9 @@
   line-height: 1.5rem;
   transition: 0.2s cubic-bezier(0, 0.5, 0.5, 1);
   text-decoration: none;
-  color: var(--text-default) !important;
+  color: var(--bg-main) !important;
   font-weight: 600;
-  background-color: var(--bg-main);
+  background-color: var(--text-default);
   cursor: pointer;
   box-sizing: border-box;
   text-align: center;
