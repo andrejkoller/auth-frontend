@@ -21,6 +21,7 @@ export const AnimatedButton = ({
       "var(--color-presenter)",
       "var(--color-visuals)",
       "var(--color-videoplayer)",
+      "var(--color-app)",
     ];
 
     const currentButton = animatedButton.current;
