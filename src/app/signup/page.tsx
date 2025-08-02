@@ -3,6 +3,7 @@ import { TextField } from "@mui/material";
 import styles from "./page.module.css";
 import Link from "next/link";
 import { AnimatedButton } from "@/components/AnimatedButton/AnimatedButton";
+import { Language } from "@/components/Language/Language";
 
 export default function Page() {
   return (
@@ -215,6 +216,11 @@ export default function Page() {
             <Link href={"/signin"} className={styles.signinButton}>
               <span>Log In</span>
             </Link>
+          </div>
+        </div>
+        <div className={styles.signupUtils}>
+          <div className={styles.signupLanguageSelector}>
+            <Language />
           </div>
         </div>
       </div>

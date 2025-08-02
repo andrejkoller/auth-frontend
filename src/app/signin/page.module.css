@@ -143,3 +143,17 @@
 .signupButton:hover {
   transform: scale(1.05);
 }
+
+.signinUtils {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.signinLanguageSelector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
