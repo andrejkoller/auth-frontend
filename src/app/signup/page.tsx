@@ -3,7 +3,8 @@ import { TextField } from "@mui/material";
 import styles from "./page.module.css";
 import Link from "next/link";
 import { AnimatedButton } from "@/components/AnimatedButton/AnimatedButton";
-import { Language } from "@/components/Language/Language";
+import { LanguageSelect } from "@/components/LanguageSelect/LanguageSelect";
+import { CountrySelect } from "@/components/CountrySelect/CountrySelect";
 
 export default function Page() {
   return (
@@ -219,8 +220,11 @@ export default function Page() {
           </div>
         </div>
         <div className={styles.signupUtils}>
+          <div className={styles.signupCountrySelector}>
+            <CountrySelect />
+          </div>
           <div className={styles.signupLanguageSelector}>
-            <Language />
+            <LanguageSelect />
           </div>
         </div>
       </div>

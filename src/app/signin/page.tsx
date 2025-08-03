@@ -4,7 +4,8 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import { AnimatedButton } from "@/components/AnimatedButton/AnimatedButton";
 import { useRouter } from "next/navigation";
-import { Language } from "@/components/Language/Language";
+import { LanguageSelect } from "@/components/LanguageSelect/LanguageSelect";
+import { CountrySelect } from "@/components/CountrySelect/CountrySelect";
 
 export default function Page() {
   const router = useRouter();
@@ -118,8 +119,11 @@ export default function Page() {
           </div>
         </div>
         <div className={styles.signinUtils}>
+          <div className={styles.signinCountrySelector}>
+            <CountrySelect />
+          </div>
           <div className={styles.signinLanguageSelector}>
-            <Language />
+            <LanguageSelect />
           </div>
         </div>
       </div>

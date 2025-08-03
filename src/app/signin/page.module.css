@@ -147,13 +147,18 @@
 .signinUtils {
   display: flex;
   justify-content: center;
-  width: 100%;
   margin-top: 32px;
+  gap: 16px;
+}
+
+.signinCountrySelector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .signinLanguageSelector {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
