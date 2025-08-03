@@ -2,6 +2,7 @@
   --font-inter: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif;
   --bg-main: #ffffff;
+  --bg-secondary: #f7f9fa;
   --text-default: #000000;
   --border-default: rgba(0, 0, 0, 0.1);
   --color-app: #4ab3e5;
@@ -12,6 +13,7 @@
 
 [data-theme="light"] {
   --bg-main: #ffffff;
+  --bg-secondary: #f7f9fa;
   --text-default: #000000;
   --border-default: rgba(0, 0, 0, 0.1);
   --color-app: #4ab3e5;
@@ -22,6 +24,7 @@
 
 [data-theme="dark"] {
   --bg-main: #000000;
+  --bg-secondary: #1a1a1a;
   --text-default: #ffffff;
   --border-default: rgba(255, 255, 255, 0.15);
   --color-app: #4ab3e5;

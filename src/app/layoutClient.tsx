@@ -1,5 +1,6 @@
 "use client";
 
+import { Footer } from "@/components/Footer/Footer";
 import { ThemeProvider } from "@/contexts/theme/ThemeProvider";
 
 export default function LayoutClient({
@@ -10,6 +11,7 @@ export default function LayoutClient({
   return (
     <ThemeProvider>
       <main>{children}</main>
+      <Footer />
     </ThemeProvider>
   );
 }
