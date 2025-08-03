@@ -21,13 +21,13 @@ export default function Page() {
                     sx={{
                       "& .MuiOutlinedInput-root": {
                         "& fieldset": {
-                          borderColor: "var(--border)",
+                          borderColor: "var(--border-default)",
                         },
                         "&:hover fieldset": {
-                          borderColor: "var(--border)",
+                          borderColor: "var(--border-default)",
                         },
                         "&.Mui-focused fieldset": {
-                          borderColor: "var(--border)",
+                          borderColor: "var(--border-default)",
                         },
                         "& .MuiInputBase-input": {
                           color: "var(--text-default)",
@@ -58,13 +58,13 @@ export default function Page() {
                     sx={{
                       "& .MuiOutlinedInput-root": {
                         "& fieldset": {
-                          borderColor: "var(--border)",
+                          borderColor: "var(--border-default)",
                         },
                         "&:hover fieldset": {
-                          borderColor: "var(--border)",
+                          borderColor: "var(--border-default)",
                         },
                         "&.Mui-focused fieldset": {
-                          borderColor: "var(--border)",
+                          borderColor: "var(--border-default)",
                         },
                         "& .MuiInputBase-input": {
                           color: "var(--text-default)",
@@ -95,13 +95,13 @@ export default function Page() {
                   sx={{
                     "& .MuiOutlinedInput-root": {
                       "& fieldset": {
-                        borderColor: "var(--border)",
+                        borderColor: "var(--border-default)",
                       },
                       "&:hover fieldset": {
-                        borderColor: "var(--border)",
+                        borderColor: "var(--border-default)",
                       },
                       "&.Mui-focused fieldset": {
-                        borderColor: "var(--border)",
+                        borderColor: "var(--border-default)",
                       },
                       "& .MuiInputBase-input": {
                         color: "var(--text-default)",
@@ -131,13 +131,13 @@ export default function Page() {
                   sx={{
                     "& .MuiOutlinedInput-root": {
                       "& fieldset": {
-                        borderColor: "var(--border)",
+                        borderColor: "var(--border-default)",
                       },
                       "&:hover fieldset": {
-                        borderColor: "var(--border)",
+                        borderColor: "var(--border-default)",
                       },
                       "&.Mui-focused fieldset": {
-                        borderColor: "var(--border)",
+                        borderColor: "var(--border-default)",
                       },
                       "& .MuiInputBase-input": {
                         color: "var(--text-default)",
@@ -167,13 +167,13 @@ export default function Page() {
                   sx={{
                     "& .MuiOutlinedInput-root": {
                       "& fieldset": {
-                        borderColor: "var(--border)",
+                        borderColor: "var(--border-default)",
                       },
                       "&:hover fieldset": {
-                        borderColor: "var(--border)",
+                        borderColor: "var(--border-default)",
                       },
                       "&.Mui-focused fieldset": {
-                        borderColor: "var(--border)",
+                        borderColor: "var(--border-default)",
                       },
                       "& .MuiInputBase-input": {
                         color: "var(--text-default)",
