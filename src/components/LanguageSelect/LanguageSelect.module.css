@@ -9,11 +9,12 @@
   padding: 0 6px 0 6px;
   margin: 0;
   display: inline-block;
+  opacity: 0.5;
 }
 
 .languageItem:not(:first-child) {
   border-left: 1px solid var(--border-default);
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .languageLink {

@@ -1,0 +1,82 @@
+.languageDialog {
+  position: fixed;
+  top: 100vh;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--bg-main);
+  z-index: 1000;
+  transition: top 0.3s ease-in-out;
+}
+
+.languageDialog.open {
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.languageDialogContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 1440px;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.languageDialogHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.topLanguagesList {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  width: 100%;
+  border-bottom: 1px solid var(--border-default);
+  margin: 0;
+  padding: 2rem 0;
+  list-style: none;
+}
+
+.otherLanguagesList {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  width: 100%;
+  margin: 0;
+  padding: 2rem 0;
+  list-style: none;
+}
+
+.languageItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.languageButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--text-default);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.languageFlag {
+  width: 2rem;
+  height: 1.5rem;
+}
