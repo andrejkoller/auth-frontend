@@ -35,25 +35,6 @@ const topLanguages = [
   },
 ];
 
-const otherLanguages = [
-  {
-    code: "CN",
-    name: "中国",
-  },
-  {
-    code: "JP",
-    name: "日本",
-  },
-  {
-    code: "KR",
-    name: "한국",
-  },
-  {
-    code: "RU",
-    name: "Россия",
-  },
-];
-
 export const LanguageDialog = () => {
   const { open, closeDialog } = useLanguageDialog();
 
@@ -77,20 +58,6 @@ export const LanguageDialog = () => {
         </div>
         <ul className={styles.topLanguagesList}>
           {topLanguages.map((language) => (
-            <li key={language.code} className={styles.languageItem}>
-              <ButtonBase
-                type="button"
-                className={styles.languageButton}
-                aria-label={`Select language: ${language.name}`}
-              >
-                <Flag code={language.code} className={styles.languageFlag} />
-                <span className={styles.languageName}>{language.name}</span>
-              </ButtonBase>
-            </li>
-          ))}
-        </ul>
-        <ul className={styles.otherLanguagesList}>
-          {otherLanguages.map((language) => (
             <li key={language.code} className={styles.languageItem}>
               <ButtonBase
                 type="button"
