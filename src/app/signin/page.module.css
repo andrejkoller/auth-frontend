@@ -143,10 +143,3 @@
 .signupButton:hover {
   transform: scale(1.05);
 }
-
-.signinLanguageSelector {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 32px;
-}

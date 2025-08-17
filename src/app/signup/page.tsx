@@ -3,7 +3,7 @@ import { TextField } from "@mui/material";
 import styles from "./page.module.css";
 import Link from "next/link";
 import { AnimatedButton } from "@/components/AnimatedButton/AnimatedButton";
-import { LanguageSelect } from "@/components/LanguageSelect/LanguageSelect";
+import { textFieldSx } from "@/utils/textFieldSx";
 
 export default function Page() {
   return (
@@ -18,32 +18,7 @@ export default function Page() {
               <div className={styles.signupFieldGroup}>
                 <div className={styles.signupField}>
                   <TextField
-                    sx={{
-                      "& .MuiOutlinedInput-root": {
-                        "& fieldset": {
-                          borderColor: "var(--border-default)",
-                        },
-                        "&:hover fieldset": {
-                          borderColor: "var(--border-default)",
-                        },
-                        "&.Mui-focused fieldset": {
-                          borderColor: "var(--border-default)",
-                        },
-                        "& .MuiInputBase-input": {
-                          color: "var(--text-default)",
-                        },
-                        "& .MuiInputBase-input::placeholder": {
-                          color: "var(--text-muted)",
-                          opacity: 1,
-                        },
-                      },
-                      "& .MuiFormLabel-root": {
-                        color: "var(--text-default)",
-                      },
-                      "& .MuiFormLabel-root.Mui-focused": {
-                        color: "var(--text-default)",
-                      },
-                    }}
+                    sx={textFieldSx}
                     label="First Name"
                     variant="outlined"
                     placeholder="Andrej"
@@ -55,32 +30,7 @@ export default function Page() {
                 </div>
                 <div className={styles.signupField}>
                   <TextField
-                    sx={{
-                      "& .MuiOutlinedInput-root": {
-                        "& fieldset": {
-                          borderColor: "var(--border-default)",
-                        },
-                        "&:hover fieldset": {
-                          borderColor: "var(--border-default)",
-                        },
-                        "&.Mui-focused fieldset": {
-                          borderColor: "var(--border-default)",
-                        },
-                        "& .MuiInputBase-input": {
-                          color: "var(--text-default)",
-                        },
-                        "& .MuiInputBase-input::placeholder": {
-                          color: "var(--text-muted)",
-                          opacity: 1,
-                        },
-                      },
-                      "& .MuiFormLabel-root": {
-                        color: "var(--text-default)",
-                      },
-                      "& .MuiFormLabel-root.Mui-focused": {
-                        color: "var(--text-default)",
-                      },
-                    }}
+                    sx={textFieldSx}
                     label="Last Name"
                     variant="outlined"
                     placeholder="Koller"
@@ -92,32 +42,7 @@ export default function Page() {
               </div>
               <div className={styles.signupField}>
                 <TextField
-                  sx={{
-                    "& .MuiOutlinedInput-root": {
-                      "& fieldset": {
-                        borderColor: "var(--border-default)",
-                      },
-                      "&:hover fieldset": {
-                        borderColor: "var(--border-default)",
-                      },
-                      "&.Mui-focused fieldset": {
-                        borderColor: "var(--border-default)",
-                      },
-                      "& .MuiInputBase-input": {
-                        color: "var(--text-default)",
-                      },
-                      "& .MuiInputBase-input::placeholder": {
-                        color: "var(--text-muted)",
-                        opacity: 1,
-                      },
-                    },
-                    "& .MuiFormLabel-root": {
-                      color: "var(--text-default)",
-                    },
-                    "& .MuiFormLabel-root.Mui-focused": {
-                      color: "var(--text-default)",
-                    },
-                  }}
+                  sx={textFieldSx}
                   label="Email"
                   variant="outlined"
                   placeholder="name@domain.com"
@@ -128,32 +53,7 @@ export default function Page() {
               </div>
               <div className={styles.signupField}>
                 <TextField
-                  sx={{
-                    "& .MuiOutlinedInput-root": {
-                      "& fieldset": {
-                        borderColor: "var(--border-default)",
-                      },
-                      "&:hover fieldset": {
-                        borderColor: "var(--border-default)",
-                      },
-                      "&.Mui-focused fieldset": {
-                        borderColor: "var(--border-default)",
-                      },
-                      "& .MuiInputBase-input": {
-                        color: "var(--text-default)",
-                      },
-                      "& .MuiInputBase-input::placeholder": {
-                        color: "var(--text-muted)",
-                        opacity: 1,
-                      },
-                    },
-                    "& .MuiFormLabel-root": {
-                      color: "var(--text-default)",
-                    },
-                    "& .MuiFormLabel-root.Mui-focused": {
-                      color: "var(--text-default)",
-                    },
-                  }}
+                  sx={textFieldSx}
                   label="Password"
                   type="password"
                   variant="outlined"
@@ -164,32 +64,7 @@ export default function Page() {
               </div>
               <div className={styles.signupField}>
                 <TextField
-                  sx={{
-                    "& .MuiOutlinedInput-root": {
-                      "& fieldset": {
-                        borderColor: "var(--border-default)",
-                      },
-                      "&:hover fieldset": {
-                        borderColor: "var(--border-default)",
-                      },
-                      "&.Mui-focused fieldset": {
-                        borderColor: "var(--border-default)",
-                      },
-                      "& .MuiInputBase-input": {
-                        color: "var(--text-default)",
-                      },
-                      "& .MuiInputBase-input::placeholder": {
-                        color: "var(--text-muted)",
-                        opacity: 1,
-                      },
-                    },
-                    "& .MuiFormLabel-root": {
-                      color: "var(--text-default)",
-                    },
-                    "& .MuiFormLabel-root.Mui-focused": {
-                      color: "var(--text-default)",
-                    },
-                  }}
+                  sx={textFieldSx}
                   label="Confirm Password"
                   type="password"
                   variant="outlined"
@@ -217,11 +92,6 @@ export default function Page() {
               <span>Log In</span>
             </Link>
           </div>
-        </div>
-        <div
-          className={`${styles.signupLanguageSelector} ${styles.signupUtils}`}
-        >
-          <LanguageSelect />
         </div>
       </div>
     </section>
