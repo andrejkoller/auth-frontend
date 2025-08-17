@@ -5,7 +5,6 @@ import Link from "next/link";
 import { AnimatedButton } from "@/components/AnimatedButton/AnimatedButton";
 import { useRouter } from "next/navigation";
 import { LanguageSelect } from "@/components/LanguageSelect/LanguageSelect";
-import { CountrySelect } from "@/components/CountrySelect/CountrySelect";
 
 export default function Page() {
   const router = useRouter();
@@ -118,13 +117,8 @@ export default function Page() {
             </AnimatedButton>
           </div>
         </div>
-        <div className={styles.signinUtils}>
-          <div className={styles.signinCountrySelector}>
-            <CountrySelect />
-          </div>
-          <div className={styles.signinLanguageSelector}>
-            <LanguageSelect />
-          </div>
+        <div className={styles.signinLanguageSelector}>
+          <LanguageSelect />
         </div>
       </div>
     </section>

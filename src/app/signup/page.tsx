@@ -4,7 +4,6 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import { AnimatedButton } from "@/components/AnimatedButton/AnimatedButton";
 import { LanguageSelect } from "@/components/LanguageSelect/LanguageSelect";
-import { CountrySelect } from "@/components/CountrySelect/CountrySelect";
 
 export default function Page() {
   return (
@@ -219,13 +218,10 @@ export default function Page() {
             </Link>
           </div>
         </div>
-        <div className={styles.signupUtils}>
-          <div className={styles.signupCountrySelector}>
-            <CountrySelect />
-          </div>
-          <div className={styles.signupLanguageSelector}>
-            <LanguageSelect />
-          </div>
+        <div
+          className={`${styles.signupLanguageSelector} ${styles.signupUtils}`}
+        >
+          <LanguageSelect />
         </div>
       </div>
     </section>

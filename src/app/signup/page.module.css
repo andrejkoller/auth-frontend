@@ -133,21 +133,9 @@
   transform: scale(1.05);
 }
 
-.signupUtils {
-  display: flex;
-  justify-content: center;
-  margin-top: 32px;
-  gap: 8px;
-}
-
-.signupCountrySelector {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .signupLanguageSelector {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 32px;
 }

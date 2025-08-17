@@ -144,21 +144,9 @@
   transform: scale(1.05);
 }
 
-.signinUtils {
-  display: flex;
-  justify-content: center;
-  margin-top: 32px;
-  gap: 8px;
-}
-
-.signinCountrySelector {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .signinLanguageSelector {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 32px;
 }
