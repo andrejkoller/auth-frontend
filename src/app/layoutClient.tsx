@@ -1,9 +1,7 @@
 "use client";
 
-import { LanguageDialog } from "@/components/dialogs/LanguageDialog/LanguageDialog";
 import { Footer } from "@/components/Footer/Footer";
-import { LanguageDialogProvider } from "@/contexts/LanguageDialog/LanguageDialogContext";
-import { ThemeProvider } from "@/contexts/Theme/ThemeProvider";
+import { ThemeProvider } from "@/contexts/ThemeProvider";
 
 export default function LayoutClient({
   children,
@@ -12,11 +10,8 @@ export default function LayoutClient({
 }>) {
   return (
     <ThemeProvider>
-      <LanguageDialogProvider>
-        <main>{children}</main>
-        <Footer />
-        <LanguageDialog />
-      </LanguageDialogProvider>
+      <main>{children}</main>
+      <Footer />
     </ThemeProvider>
   );
 }

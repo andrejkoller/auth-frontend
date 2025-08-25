@@ -8,6 +8,7 @@ import { textFieldSx } from "@/utils/textFieldSx";
 import { useState } from "react";
 import { login } from "@/services/authService";
 import { setAuthToken } from "@/services/tokenService";
+import { LanguageSelect } from "@/components/LanguageSelect/LanguageSelect";
 
 export default function Page() {
   const [formData, setFormData] = useState({
@@ -112,6 +113,7 @@ export default function Page() {
                   <span>Sign Up</span>
                 </AnimatedButton>
               </div>
+              <LanguageSelect />
             </>
           )}
         </div>

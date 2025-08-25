@@ -1,13 +1,13 @@
-import { RegisterRequest } from "@/models/user/RegisterRequest";
+import { RegisterRequest } from "@/models/RegisterRequest";
 import axiosInstance from "./axiosInstance";
-import { LoginRequest } from "@/models/user/LoginRequest";
-import { AuthResponse } from "@/models/user/AuthResponse";
+import { LoginRequest } from "@/models/LoginRequest";
+import { AuthResponse } from "@/models/AuthResponse";
 
 export const register = async (request: RegisterRequest): Promise<void> => {
   try {
     await axiosInstance.post(`/auth/register`, request);
   } catch (error) {
-    console.error("Error registeFring user:", error);
+    console.error("Error registering user:", error);
     throw error;
   }
 };

@@ -9,8 +9,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Auhtentication",
-  description: "Authentication for the Church Management System",
+  title: "Authentication",
+  description: "Authentication for the Presenter Application",
 };
 
 export default function RootLayout({
