@@ -1,5 +1,5 @@
 "use client";
-import { CircularProgress, TextField } from "@mui/material";
+import { ButtonBase, CircularProgress, TextField } from "@mui/material";
 import styles from "./page.module.css";
 import Link from "next/link";
 import { AnimatedButton } from "@/components/AnimatedButton/AnimatedButton";
@@ -9,6 +9,7 @@ import { useState } from "react";
 import { login } from "@/services/authService";
 import { setAuthToken } from "@/services/tokenService";
 import { LanguageSelect } from "@/components/LanguageSelect/LanguageSelect";
+import { buttonBaseSx } from "@/utils/buttonBaseSx";
 
 export default function Page() {
   const [formData, setFormData] = useState({
@@ -95,9 +96,13 @@ export default function Page() {
                   </Link>
                 </div>
                 <div className={styles.signinActions}>
-                  <button type="submit" className={styles.signinButton}>
+                  <ButtonBase
+                    sx={buttonBaseSx}
+                    type="submit"
+                    className={styles.signinButton}
+                  >
                     Log In
-                  </button>
+                  </ButtonBase>
                 </div>
               </form>
               <div className={styles.divider}>
