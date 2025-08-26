@@ -1,4 +1,5 @@
 "use client";
+
 import { ButtonBase, CircularProgress, TextField } from "@mui/material";
 import styles from "./page.module.css";
 import Link from "next/link";
@@ -8,7 +9,6 @@ import { textFieldSx } from "@/utils/textFieldSx";
 import { useState } from "react";
 import { login } from "@/services/authService";
 import { setAuthToken } from "@/services/tokenService";
-import { LanguageSelect } from "@/components/LanguageSelect/LanguageSelect";
 import { buttonBaseSx } from "@/utils/buttonBaseSx";
 
 export default function Page() {
@@ -118,7 +118,6 @@ export default function Page() {
                   <span>Sign Up</span>
                 </AnimatedButton>
               </div>
-              <LanguageSelect />
             </>
           )}
         </div>

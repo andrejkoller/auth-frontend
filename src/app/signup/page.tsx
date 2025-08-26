@@ -1,4 +1,5 @@
 "use client";
+
 import { CircularProgress, TextField } from "@mui/material";
 import styles from "./page.module.css";
 import Link from "next/link";
@@ -7,7 +8,6 @@ import { textFieldSx } from "@/utils/textFieldSx";
 import { useState } from "react";
 import { register } from "@/services/authService";
 import { useRouter } from "next/navigation";
-import { LanguageSelect } from "@/components/LanguageSelect/LanguageSelect";
 
 export default function Page() {
   const [formData, setFormData] = useState({
@@ -166,7 +166,6 @@ export default function Page() {
                   <span>Log In</span>
                 </Link>
               </div>
-              <LanguageSelect />
             </>
           )}
         </div>
