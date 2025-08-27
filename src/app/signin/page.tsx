@@ -8,7 +8,6 @@ import { useRouter } from "next/navigation";
 import { textFieldSx } from "@/utils/textFieldSx";
 import { useState } from "react";
 import { login } from "@/services/authService";
-import { setAuthToken } from "@/services/tokenService";
 import { buttonBaseSx } from "@/utils/buttonBaseSx";
 
 export default function Page() {
@@ -33,8 +32,7 @@ export default function Page() {
 
     try {
       const user = await login(formData);
-      setAuthToken(user.token);
-      router.push("/account");
+      window.location.href = `http://localhost:3000/callback?token=${user.token}`;
     } catch (error) {
       console.error("Error logging in:", error);
     } finally {
