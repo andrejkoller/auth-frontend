@@ -30,6 +30,7 @@ npm install
 ```bash
 npm run dev
 ```
+## Screenshots
 
 <div align="center">
 <img alt="Screenshot" src="https://github.com/user-attachments/assets/b8971f44-000e-437a-bf32-dcbb98254c0d" />
