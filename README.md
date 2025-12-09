@@ -71,3 +71,10 @@ The app uses JWT-based authentication with token refresh:
 - C++ Application: [Presenter](https://github.com/andrejkoller/Presenter)
 
 ## 📸 Screenshots
+
+<img width="1920" height="1080" alt="Screenshot 1" src="https://github.com/user-attachments/assets/e0a288c5-5015-4b8d-9a3f-073524b277a3" />
+<img width="1920" height="1080" alt="Screenshot 2" src="https://github.com/user-attachments/assets/89b5545a-8613-47ef-9c5c-d4ece6bd756d" />
+<img width="1920" height="1080" alt="Screenshot 3" src="https://github.com/user-attachments/assets/79f3e4be-5944-474d-b651-8cec9bcf098b" />
+<img width="1920" height="1080" alt="Screenshot 4" src="https://github.com/user-attachments/assets/bec30b7a-b563-47c5-96bc-ebbe2e4d3efb" />
+<img width="1920" height="1080" alt="Screenshot 5" src="https://github.com/user-attachments/assets/b1d5e882-c376-4e1a-8013-c5b94d9ca6fd" />
+<img width="1920" height="1080" alt="Screenshot 6" src="https://github.com/user-attachments/assets/b40a4409-63b4-4af8-856e-e8b3bf860035" />
